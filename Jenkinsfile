@@ -15,10 +15,5 @@ pipeline {
                 sh './vendor/bin/phpunit tests'
             }
         }
-        stage('Debug') {
-            steps {
-                echo "JD_TO_PULL: ${env.JD_TO_PULL}"
-            }
-        }
     }
 }
